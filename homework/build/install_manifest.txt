@@ -1,0 +1,8 @@
+/home/wowtt/wowtt/workspace/projects/formatter_project/build/install/lib/libformatter.a
+/home/wowtt/wowtt/workspace/projects/formatter_project/build/install/include/formatter.h
+/home/wowtt/wowtt/workspace/projects/formatter_project/build/install/lib/libformatter_ex.a
+/home/wowtt/wowtt/workspace/projects/formatter_project/build/install/include/formatter_ex.h
+/home/wowtt/wowtt/workspace/projects/formatter_project/build/install/lib/libsolver.a
+/home/wowtt/wowtt/workspace/projects/formatter_project/build/install/include/solver.h
+/home/wowtt/wowtt/workspace/projects/formatter_project/build/install/bin/hello_world
+/home/wowtt/wowtt/workspace/projects/formatter_project/build/install/bin/equation
