@@ -637,7 +637,7 @@ lab_docker/
 - Список задач с кнопкой "Delete"
 - Тестовая задача "Example task"
 
-скриншот 1. (добавление Example task, 123, фыв, 8 лаба, qwe, asd, докер)
+скриншот 1. (добавление 123, фыв, 8 лаба, qwe, asd, докер)
 ![+ Example task, 123, фыв, 8 лаба, qwe, asd, докер](https://github.com/qwepyhbvc/lab_docker/blob/main/123/%D0%B8%D1%81%D1%85%D0%BE%D0%B4.jpg)
 
 скриншот 2. (убираем докер)
