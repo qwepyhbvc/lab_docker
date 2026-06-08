@@ -7,7 +7,7 @@ on:
     branches: [ main, master ]
 
 jobs:
-  test-print-linux:
+  test-linux:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -17,27 +17,7 @@ jobs:
     - name: Configure
       run: |
         mkdir build && cd build
-        cmake .. -DBUILD_TESTS=ON
-    - name: Build
-      run: |
-        cd build
-        cmake --build .
-    - name: Run tests
-      run: |
-        cd build
-        ctest --verbose
-
-  test-banking-linux:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        compiler: [gcc, clang]
-    steps:
-    - uses: actions/checkout@v4
-    - name: Configure
-      run: |
-        mkdir build && cd build
-        cmake .. -DBUILD_BANKING_TESTS=ON
+        cmake .. -DBUILD_TESTS=ON -DBUILD_BANKING_TESTS=ON
     - name: Build
       run: |
         cd build
@@ -51,30 +31,15 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Configure print tests
+    - name: Configure
       run: |
-        mkdir build-print
-        cd build-print
-        cmake .. -DBUILD_TESTS=ON -Dgtest_force_shared_crt=ON
-    - name: Build print tests
+        mkdir build && cd build
+        cmake .. -DBUILD_TESTS=ON -DBUILD_BANKING_TESTS=ON -Dgtest_force_shared_crt=ON
+    - name: Build
       run: |
-        cd build-print
+        cd build
         cmake --build . --config Release
-    - name: Run print tests
+    - name: Run tests
       run: |
-        cd build-print
-        ctest --verbose -C Release
-    
-    - name: Configure banking tests
-      run: |
-        mkdir build-banking
-        cd build-banking
-        cmake .. -DBUILD_BANKING_TESTS=ON -Dgtest_force_shared_crt=ON
-    - name: Build banking tests
-      run: |
-        cd build-banking
-        cmake --build . --config Release
-    - name: Run banking tests
-      run: |
-        cd build-banking
+        cd build
         ctest --verbose -C Release

@@ -22,13 +22,7 @@ set(CPACK_DEBIAN_PACKAGE_NAME "libprint-dev")
 set(CPACK_DEBIAN_PACKAGE_PREDEPENDS "cmake >= 3.0")
 set(CPACK_DEBIAN_PACKAGE_RELEASE 1)
 
-include(CPack)
-# Добавляем solver_application в установку
-install(TARGETS equation
-    RUNTIME DESTINATION bin
-    COMPONENT solver
-)
+# Только основные компоненты (без solver)
+set(CPACK_COMPONENTS_ALL print banking)
 
-set(CPACK_COMPONENTS_ALL solver print banking)
-set(CPACK_COMPONENT_SOLVER_DISPLAY_NAME "Solver Application")
-set(CPACK_COMPONENT_SOLVER_DESCRIPTION "Quadratic equation solver application")
+include(CPack)
