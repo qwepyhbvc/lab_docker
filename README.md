@@ -2,8 +2,8 @@
 
 ## Отчёт по выполнению
 
-**Репозиторий:** https://github.com/qwepyhbvc/lab05  
-**GitHub Actions:** https://github.com/qwepyhbvc/lab05/actions
+**Репозиторий:** https://github.com/qwepyhbvc/lab06  
+**GitHub Actions:** https://github.com/qwepyhbvc/lab06/actions
 
 ---
 
@@ -26,34 +26,34 @@ alias gsed=sed
 
 ---
 
-### 2.2. Создание репозитория lab05
+### 2.2. Создание репозитория lab06
 
 ```bash
 cd ~/wowtt/workspace/projects
-rm -rf lab05
-git clone https://github.com/qwepyhbvc/lab04 lab05
-cd lab05
+rm -rf lab06
+git clone https://github.com/qwepyhbvc/lab04 lab06
+cd lab06
 git remote remove origin
-git remote add origin https://github.com/qwepyhbvc/lab05
+git remote add origin https://github.com/qwepyhbvc/lab06
 ```
 
 **Вывод:**
 ```
-wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects$ rm -rf lab05
-wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects$ git clone https://github.com/qwepyhbvc/lab04 lab05
-Cloning into 'lab05'...
+wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects$ rm -rf lab06
+wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects$ git clone https://github.com/qwepyhbvc/lab04 lab06
+Cloning into 'lab06'...
 remote: Enumerating objects: 273, done.
 remote: Counting objects: 100% (273/273), done.
 remote: Compressing objects: 100% (144/144), done.
 remote: Total 273 (delta 107), reused 268 (delta 105), pack-reused 0 (from 0)
 Receiving objects: 100% (273/273), 126.95 KiB | 1.38 MiB/s, done.
 Resolving deltas: 100% (107/107), done.
-wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects$ cd lab05
-wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects/lab05$ git remote remove origin
-wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects/lab05$ git remote add origin https://github.com/qwepyhbvc/lab05
+wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects$ cd lab06
+wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects/lab06$ git remote remove origin
+wowtt@LAPTOP-78USCNFN:~/wowtt/workspace/projects/lab06$ git remote add origin https://github.com/qwepyhbvc/lab06
 ```
 
-**Анализ:** Репозиторий lab04 склонирован как lab05, remote заменён на lab05.
+**Анализ:** Репозиторий lab04 склонирован как lab06, remote заменён на lab06.
 
 ---
 
@@ -146,7 +146,7 @@ EOF
 cat > README.md << 'EOF'
 # Lab05: Unit Testing with Google Test
 
-[![CI](https://github.com/qwepyhbvc/lab05/actions/workflows/ci.yml/badge.svg)](https://github.com/qwepyhbvc/lab05/actions/workflows/ci.yml)
+[![CI](https://github.com/qwepyhbvc/lab06/actions/workflows/ci.yml/badge.svg)](https://github.com/qwepyhbvc/lab06/actions/workflows/ci.yml)
 
 ## About
 
@@ -286,7 +286,7 @@ Compressing objects: 100% (149/149), done.
 Writing objects: 100% (283/283), 128.71 KiB | 42.90 MiB/s, done.
 Total 283 (delta 109), reused 272 (delta 107), pack-reused 0
 remote: Resolving deltas: 100% (109/109), done.
-To https://github.com/qwepyhbvc/lab05
+To https://github.com/qwepyhbvc/lab06
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 ```
@@ -649,7 +649,7 @@ EOF
 ```bash
 cat > CMakeLists.txt << 'EOF'
 cmake_minimum_required(VERSION 3.14)
-project(lab05)
+project(lab06)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -692,12 +692,12 @@ EOF
 cat > README.md << 'EOF'
 # Lab05: Unit Testing with Google Test
 
-[![CI](https://github.com/qwepyhbvc/lab05/actions/workflows/ci.yml/badge.svg)](https://github.com/qwepyhbvc/lab05/actions/workflows/ci.yml)
+[![CI](https://github.com/qwepyhbvc/lab06/actions/workflows/ci.yml/badge.svg)](https://github.com/qwepyhbvc/lab06/actions/workflows/ci.yml)
 
 ## Project Structure
 
 ```
-lab05/
+lab06/
 ├── banking_lib/               # Banking library (Homework)
 │   ├── include/
 │   │   ├── Account.h
@@ -807,7 +807,7 @@ Compressing objects: 100% (16/16), done.
 Writing objects: 100% (18/18), 4.51 KiB | 2.25 MiB/s, done.
 Total 18 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-To https://github.com/qwepyhbvc/lab05
+To https://github.com/qwepyhbvc/lab06
    08f22bb..1255b9f  main -> main
 ```
 
@@ -828,7 +828,7 @@ LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn'
 ```bash
 cat > CMakeLists.txt << 'EOF'
 cmake_minimum_required(VERSION 3.14)
-project(lab05)
+project(lab06)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -1024,7 +1024,7 @@ Compressing objects: 100% (6/6), done.
 Writing objects: 100% (8/8), 1.26 KiB | 1.26 MiB/s, done.
 Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
-To https://github.com/qwepyhbvc/lab05
+To https://github.com/qwepyhbvc/lab06
    1255b9f..8f8712f  main -> main
 ```
 
@@ -1110,7 +1110,7 @@ To https://github.com/qwepyhbvc/lab05
 ## 7. Структура итогового репозитория
 
 ```
-lab05/
+lab06/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml              # GitHub Actions workflow
@@ -1152,5 +1152,5 @@ lab05/
 
 | Ресурс | Ссылка |
 |--------|--------|
-| **Репозиторий lab05** | https://github.com/qwepyhbvc/lab05 |
+| **Репозиторий lab06** | https://github.com/qwepyhbvc/lab06 |
 | **GitHub Actions** | https://github.com/qwepyhbvc/l |
