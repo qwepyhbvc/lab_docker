@@ -636,3 +636,12 @@ lab_docker/
 - Кнопка "Add Task"
 - Список задач с кнопкой "Delete"
 - Тестовая задача "Example task"
+
+скриншот 1. (добавление Example task, 123, фыв, 8 лаба, qwe, asd, докер)
+![+ Example task, 123, фыв, 8 лаба, qwe, asd, докер](https://github.com/qwepyhbvc/lab_docker/blob/main/123/%D0%B8%D1%81%D1%85%D0%BE%D0%B4.jpg)
+
+скриншот 2. (убираем докер)
+![- докер](https://github.com/qwepyhbvc/lab_docker/blob/main/123/-%D0%B4%D0%BE%D0%BA%D0%B5%D1%80.jpg)
+
+скриншот 3. (убираем всё, кроме Example task, добавляем zxc, докер2)
+![- 123, фыв, 8 лаба, qwe, asd, докер | + zxc, докер2](https://github.com/qwepyhbvc/lab_docker/blob/main/123/-%20%D0%B2%D1%81%D1%91%20%2B%20%D0%B4%D0%BE%D0%BA%D0%B5%D1%802%20%2B%20zxc%20(%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D0%B1%D0%B5%D0%B7%20%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9).jpg)
